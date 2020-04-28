@@ -18,7 +18,6 @@ package org.gwtproject.http.client;
 import com.google.gwt.core.client.GWT;
 import elemental2.dom.XMLHttpRequest;
 
-/** */
 public class ResponseTest extends RequestTestBase {
 
   private static RequestBuilder getHTTPRequestBuilder() {

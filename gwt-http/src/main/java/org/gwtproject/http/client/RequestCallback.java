@@ -15,12 +15,15 @@
  */
 package org.gwtproject.http.client;
 
-/** The primary interface a caller must implement to receive a response to a {@link Request}. */
+/**
+ * The primary interface a caller must implement to receive a response to a {@link
+ * Request}.
+ */
 public interface RequestCallback {
 
   /**
-   * Called when a pending {@link Request} completes normally. Note this method is called even when
-   * the status code of the HTTP response is not "OK", 200.
+   * Called when a pending {@link Request} completes normally. Note this
+   * method is called even when the status code of the HTTP response is not "OK", 200.
    *
    * @param request the object that generated this event
    * @param response an instance of the {@link Response} class
@@ -28,8 +31,9 @@ public interface RequestCallback {
   void onResponseReceived(Request request, Response response);
 
   /**
-   * Called when a {@link Request} does not complete normally. A {@link RequestTimeoutException
-   * RequestTimeoutException} is one example of the type of error that a request may encounter.
+   * Called when a {@link Request} does not complete normally. A {@link
+   * RequestTimeoutException RequestTimeoutException} is one example of
+   * the type of error that a request may encounter.
    *
    * @param request the request object which has experienced the error condition, may be null if the
    *     request was never generated

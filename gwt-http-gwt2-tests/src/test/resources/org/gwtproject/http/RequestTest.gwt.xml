@@ -15,5 +15,8 @@
 <module>
   <inherits name='org.gwtproject.http.HTTP' />
 
-  <servlet path='/testRequest/*'     class='org.gwtproject.http.server.RequestTestServlet' />
+  <!-- sources -->
+  <source path="client"/>
+
+  <servlet path='/testRequest/*'  class='org.gwtproject.http.server.RequestTestServlet' />
 </module>

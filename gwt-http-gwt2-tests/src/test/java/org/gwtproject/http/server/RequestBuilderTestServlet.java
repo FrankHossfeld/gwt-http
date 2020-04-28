@@ -28,6 +28,10 @@ import org.gwtproject.http.client.RequestBuilderTest;
  */
 @SuppressWarnings("serial")
 public class RequestBuilderTestServlet extends HttpServlet {
+  
+  public void init() {
+    System.out.println("INit Servlet!");
+  }
 
   @Override
   protected void doDelete(HttpServletRequest request, HttpServletResponse response) {
@@ -42,6 +46,7 @@ public class RequestBuilderTestServlet extends HttpServlet {
   @Override
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws IOException {
+    System.out.println("Test!");
     String pathInfo = request.getPathInfo();
     switch (pathInfo) {
       case "/setRequestHeader":

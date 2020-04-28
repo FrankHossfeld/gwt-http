@@ -54,12 +54,6 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.gwtproject.xhr</groupId>
-            <artifactId>gwt-xhr-j2cl-tests</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -83,31 +77,31 @@
                     <moduleName>org.gwtproject.http.HTTPSuite</moduleName>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.6.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                        <phase>test-compile</phase>
-                    </execution>
-                </executions>
-                <configuration>
-                    <executable>java</executable>
-                    <classpathScope>test</classpathScope>
-                    <arguments>
-                        <argument>-classpath</argument>
-                        <classpath/>
-                        <argument>org.gwtproject.http.CorsServer</argument>
-                        <argument>-port</argument>
-                        <argument>9999</argument>
-                    </arguments>
-                    <async>true</async>
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>exec-maven-plugin</artifactId>-->
+<!--                <version>1.6.0</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>exec</goal>-->
+<!--                        </goals>-->
+<!--                        <phase>test-compile</phase>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <executable>java</executable>-->
+<!--                    <classpathScope>test</classpathScope>-->
+<!--                    <arguments>-->
+<!--                        <argument>-classpath</argument>-->
+<!--                        <classpath/>-->
+<!--                        <argument>org.gwtproject.http.CorsServer</argument>-->
+<!--                        <argument>-port</argument>-->
+<!--                        <argument>9999</argument>-->
+<!--                    </arguments>-->
+<!--                    <async>true</async>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
 
             <plugin>
                 <groupId>com.mycila</groupId>
