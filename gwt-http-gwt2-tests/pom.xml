@@ -54,7 +54,7 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-    </dependencies>
+     </dependencies>
 
     <build>
         <plugins>
@@ -74,35 +74,15 @@
                 <version>${maven.gwt.plugin}</version>
                 <extensions>true</extensions>
                 <configuration>
+                    <failOnError>true</failOnError>
                     <moduleName>org.gwtproject.http.HTTPSuite</moduleName>
+                    <style>PRETTY</style>
+                    <testArgs>
+                        <testArg>-runStyle</testArg>
+                        <testArg>HtmlUnit:Chrome</testArg>
+                    </testArgs>
                 </configuration>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.codehaus.mojo</groupId>-->
-<!--                <artifactId>exec-maven-plugin</artifactId>-->
-<!--                <version>1.6.0</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>exec</goal>-->
-<!--                        </goals>-->
-<!--                        <phase>test-compile</phase>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--                <configuration>-->
-<!--                    <executable>java</executable>-->
-<!--                    <classpathScope>test</classpathScope>-->
-<!--                    <arguments>-->
-<!--                        <argument>-classpath</argument>-->
-<!--                        <classpath/>-->
-<!--                        <argument>org.gwtproject.http.CorsServer</argument>-->
-<!--                        <argument>-port</argument>-->
-<!--                        <argument>9999</argument>-->
-<!--                    </arguments>-->
-<!--                    <async>true</async>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-
             <plugin>
                 <groupId>com.mycila</groupId>
                 <artifactId>license-maven-plugin</artifactId>
