@@ -122,7 +122,8 @@ public class RequestBuilderTest extends RequestTestBase {
   }
 
   public void testSendRequest_GET() throws RequestException {
-    RequestBuilder builder =    new RequestBuilder(RequestBuilder.GET, getTestBaseURL() + "sendRequest_GET");
+    RequestBuilder builder =
+        new RequestBuilder(RequestBuilder.GET, getTestBaseURL() + "sendRequest_GET");
     testSendRequest(builder, null, SERVLET_GET_RESPONSE);
   }
 
@@ -355,10 +356,12 @@ public class RequestBuilderTest extends RequestTestBase {
    * @param requestData the data to request
    * @param expectedResponse the expected response
    */
-  private void testSendRequest(RequestBuilder builder, String requestData, final String expectedResponse)
+  private void testSendRequest(
+      RequestBuilder builder, String requestData, final String expectedResponse)
       throws RequestException {
     delayTestFinishForRequest();
-    builder.sendRequest( requestData,
+    builder.sendRequest(
+        requestData,
         new RequestCallback() {
           @Override
           public void onError(Request request, Throwable exception) {

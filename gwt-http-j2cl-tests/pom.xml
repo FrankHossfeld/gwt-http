@@ -10,7 +10,7 @@
   </parent>
   <artifactId>gwt-http-j2cl-tests</artifactId>
 
-  <name>GWT XML Header Request - J2CL Tests</name>
+  <name>GWT HTTP Request - J2CL Tests</name>
   <description>Test cases for the J2Cl tests</description>
   <url>https://github.com/gwtproject/gwt-http</url>
 

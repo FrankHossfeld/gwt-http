@@ -28,7 +28,7 @@ import org.gwtproject.http.client.RequestBuilderTest;
  */
 @SuppressWarnings("serial")
 public class RequestBuilderTestServlet extends HttpServlet {
-  
+
   public void init() {
     System.out.println("INit Servlet!");
   }

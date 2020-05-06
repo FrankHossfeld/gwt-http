@@ -16,7 +16,6 @@
 package org.gwtproject.http.client;
 
 import elemental2.dom.XMLHttpRequest;
-
 import java.util.ArrayList;
 import java.util.List;
 
