@@ -17,6 +17,4 @@
 
   <!-- sources -->
   <source path="client"/>
-
-  <servlet path='/testRequestBuilder/*' class='org.gwtproject.http.server.RequestBuilderTestServlet' />
 </module>

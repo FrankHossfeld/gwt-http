@@ -17,6 +17,4 @@
 
   <!-- sources -->
   <source path="client"/>
-
-  <servlet path='/testResponse/*' class='org.gwtproject.http.server.ResponseTestServlet' />
 </module>
