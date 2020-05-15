@@ -15,7 +15,6 @@
  */
 package org.gwtproject.http.client;
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.junit.DoNotRunWith;
 import com.google.gwt.junit.Platform;
 
@@ -30,7 +29,7 @@ public class RequestBuilderTest extends RequestTestBase {
   public static final String SERVLET_PUT_RESPONSE = "put";
 
   private static String getTestBaseURL() {
-    return GWT.getModuleBaseURL() + "testRequestBuilder/";
+    return TEST_SERVICE_BASE_URL + "testRequestBuilder/";
   }
 
   @Override

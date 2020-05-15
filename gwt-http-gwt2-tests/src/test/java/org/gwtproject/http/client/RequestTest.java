@@ -15,14 +15,13 @@
  */
 package org.gwtproject.http.client;
 
-import com.google.gwt.core.client.GWT;
 import elemental2.dom.XMLHttpRequest;
 
 /** TODO: document me. */
 public class RequestTest extends RequestTestBase {
 
   private static String getTestBaseURL() {
-    return GWT.getModuleBaseURL() + "testRequest/";
+    return TEST_SERVICE_BASE_URL + "testRequest/";
   }
 
   @Override

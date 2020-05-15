@@ -15,7 +15,6 @@
  */
 package org.gwtproject.http.client;
 
-import com.google.gwt.core.client.GWT;
 import elemental2.dom.XMLHttpRequest;
 
 public class ResponseTest extends RequestTestBase {
@@ -29,7 +28,7 @@ public class ResponseTest extends RequestTestBase {
   }
 
   private static String getTestBaseURL() {
-    return GWT.getModuleBaseURL() + "testResponse/";
+    return TEST_SERVICE_BASE_URL + "testResponse/";
   }
 
   private static void raiseUnexpectedException(Throwable exception) {

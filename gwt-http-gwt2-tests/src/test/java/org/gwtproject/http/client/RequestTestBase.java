@@ -22,6 +22,8 @@ public abstract class RequestTestBase extends GWTTestCase {
   /** The timeout for request tests. */
   protected static final int REQUEST_TIMEOUT = 15000;
 
+  protected static final String TEST_SERVICE_BASE_URL = "http://localhost:9999/";
+
   /**
    * Delay finishing a test while we wait for a response. This method should be used instead of
    * {@link #delayTestFinish(int)} so we can adjust timeouts for all Rpc tests at once.
