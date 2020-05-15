@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet component of the {@link org.gwtproject.http.client.RequestBuilderTest}.
  *
- * Only for test purposes. Do not use this class in production environments!
+ * <p>Only for test purposes. Do not use this class in production environments!
  */
 @SuppressWarnings("serial")
 public class RequestBuilderTestServlet extends TestServlet {

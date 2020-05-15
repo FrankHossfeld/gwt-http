@@ -29,9 +29,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Only for test purposes. Do not use this class in production environments!
- */
+/** Only for test purposes. Do not use this class in production environments! */
 public abstract class TestServlet extends HttpServlet {
 
   private static final long serialVersionUID = -3137962571481312983L;
