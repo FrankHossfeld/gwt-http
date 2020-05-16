@@ -57,7 +57,6 @@
     <maven.deploy.plugin>3.0.0-M1</maven.deploy.plugin>
 
     <jsinterop.annotations.version>1.0.2</jsinterop.annotations.version>
-<!--    <typed.array.verrsion>1.0-SNAPSHOT</typed.array.verrsion>-->
     <elemental2.version>1.0.0-RC1</elemental2.version>
   </properties>
 
