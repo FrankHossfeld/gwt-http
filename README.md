@@ -1,6 +1,5 @@
+# gwt-http
 ![GWT3/J2CL compatible](https://img.shields.io/badge/GWT3/J2CL-compatible-brightgreen.svg)
-
-# GWT HTTP
 
 A future-proof port of the `com.google.gwt.http.HTTP` GWT module,
 with no dependency on `gwt-user` (besides the Java Runtime Emulation),
@@ -10,9 +9,6 @@ to prepare for GWT 3 / J2Cl.
 
 The code should be compatible with all evergreen browsers,
 and Internet Explorer 10 and 11.
-
-
-# GWT XHR
 
 ### Dependency
 
