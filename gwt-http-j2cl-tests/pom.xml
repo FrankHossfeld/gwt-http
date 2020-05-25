@@ -113,7 +113,7 @@
           <!-- TODO: as long as ADVANCED compilationLevel will remove Assertions, we stay with BUNDLE -->
           <compilationLevel>ADVANCED</compilationLevel>
           <!--                <compilationLevel>BUNDLE</compilationLevel>-->
-          <webdriver>chrome,htmlunit</webdriver>
+          <webdriver>htmlunit</webdriver>
         </configuration>
         <executions>
           <execution>
