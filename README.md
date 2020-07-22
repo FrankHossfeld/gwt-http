@@ -1,55 +1,37 @@
 # gwt-http
-![GWT3/J2CL compatible](https://img.shields.io/badge/GWT3/J2CL-compatible-brightgreen.svg)
+![GWT3/J2CL compatible](https://img.shields.io/badge/GWT3/J2CL-compatible-brightgreen.svg)  [![License](https://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html) [![Chat on Gitter](https://badges.gitter.im/hal/elemento.svg)](https://gitter.im/gwtproject/gwt-modules) ![CI](https://github.com/gwtproject/gwt-http/workflows/CI/badge.svg)
 
 A future-proof port of the `com.google.gwt.http.HTTP` GWT module,
 with no dependency on `gwt-user` (besides the Java Runtime Emulation),
 to prepare for GWT 3 / J2Cl.
 
-##  Browser compatibility
-
-The code should be compatible with all evergreen browsers,
-and Internet Explorer 10 and 11.
-
-### Dependency
-
-```xml
-<dependency>
-    <groupId>org.gwtproject.http</groupId>
-    <artifactId>gwt-http</artifactId>
-    <version>1.0-SNAPSHOT</version>
-</dependency>
-```
-
-##  Migrating from `c.g.g.http.HTTP`
+##  Migrating from `com.google.gwt.http.HTTP`
 
 1. Add the dependency to your build.
 
    For Maven:
 
    ```xml
-   <dependency>
-     <groupId>org.gwtproject.http</groupId>
-     <artifactId>gwt-http</artifactId>
-     <version>${gwtHttpVersion}</version>
-   </dependency>
+    <dependency>
+        <groupId>org.gwtproject.http</groupId>
+        <artifactId>gwt-http</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </dependency>
    ```
 
    For Gradle:
 
    ```gradle
-   compile "org.gwtproject.http:gwt-http:${gwtHttpVersion}"
+   implementation("org.gwtproject.http:gwt-http:HEAD-SNAPSHOT")
    ```
 
 2. Update your GWT module to use
 
    ```xml
-   <inherits name="org.gwtproject.http.HTTP" />
+   <inherits name="org.gwtproject.http.HTTP />
    ```
 
-   (either change from `com.google.gwt.http.HTTP`,
-   or add it if you inherited it transitively from another GWT module)
-
-3. Change your `import`s in your Java source files:
+3. Change the `import`s in your Java source files:
 
    ```java
    import org.gwtproject.http.client.RequestBuilder;
@@ -57,16 +39,24 @@ and Internet Explorer 10 and 11.
    import org.gwtproject.http.client.UrlBuilder;
    ```
 
+## Instructions
 
-### Instructions
 To build gwt-http:
 
-* run `mvn clean install`
+* run `mvn clean verify`
 
-on the parent directory.
+on the parent directory. This will build the artifact and run tests against the JVM, J2CL, and GWT2.
 
-To run the j2cl tests:
+## System Requirements
 
-* switch to the 'gwt-http-j2cl-tests' directory
-* run `mvn j2cl:clean` & `mvn j2cl:test`
+**GWT HTTP requires GWT 2.9.0 or newer!**
 
+
+## Dependencies
+
+GWT HTTP does not depend on any other module.
+
+##  Browser compatibility
+
+The code should be compatible with all evergreen browsers,
+and Internet Explorer 10 and 11.

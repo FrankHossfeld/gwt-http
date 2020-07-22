@@ -1,5 +1,5 @@
 /*
- * Copyright © 2020 The GWT Authors
+ * Copyright © 2019 The GWT Project Authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -316,7 +316,7 @@ public class RequestBuilderTest {
   //   *   <li>Timeout is less than the server's response time
   //   * </ul>
   //   *
-  //   * <p>XHR handling is synchronous in HtmlUnit at present (svn r5607).
+  //   * <p>HTTP handling is synchronous in HtmlUnit at present (svn r5607).
   //   */
   //  @DoNotRunWith(Platform.HtmlUnitBug)
   //  public void testSetTimeout_timeout() throws RequestException {
